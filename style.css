@@ -8,11 +8,14 @@ body{
     background-color: #aad6c0;
     display: flex;
     flex-direction: column;
-    color: white;
+    color:black;
     align-items: center;
     justify-content: center;
     height: 100vh;
     font-family: 'Lato' ,'sans-serif';
+}
+.container{
+    display: flex;
 }
 img{
     width:30px;
@@ -20,7 +23,7 @@ img{
     margin-left: 10px;
 }
 .seat{
-    background-color: #444451;
+    background-color: #919195;
     height: 50px;
     width: 25px;
     margin: 5px;
@@ -29,17 +32,20 @@ img{
 .row{
     display: flex;
 }
-.movie-container select{
+.bus-container select{
     background-color: #fff;
     border: 0;
     border-radius: 5px;
     font-size: 14px;
     margin-left: 10px;
     padding: 5px 15px 5px 15px;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
     margin-bottom: 50px;
+}
+.lowerdeck{
+    margin-right: 80px;
+}
+.seatlegend{
+    margin-top: 40px;
 }
 .seat.selected{
     background-color: rgb(61, 114, 61) ;
@@ -48,10 +54,10 @@ img{
     background-color: rgb(240, 234, 226);
 }
 .seat.female{
-    background-color: rgb(240, 146, 162);
+    background-color: rgb(221, 142, 155);
 }
 .seat.male{
-    background-color: rgb(44, 44, 202);
+    background-color: rgb(67, 67, 224);
 }
 .seat:nth-of-type(1){
     margin-right: 25px;
@@ -60,9 +66,12 @@ img{
     cursor: pointer;
     transform: scale(1.2);
 }
+.showcase .seat:not(.unavailable):hover{
+    cursor: default;
+    transform: scale(1);
+}
 .showcase{
-    
-    color: rgb(93, 93, 93) ;
+    color: rgb(68, 67, 67) ;
     display: flex;
     align-items: center;
     list-style-type: none;
@@ -73,7 +82,12 @@ img{
 label{
 text-transform: uppercase;
 font-size: 16px;
+font-weight: bold;
 }
 p{
-    font-size: 12px;
+    font-size: 14px;
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
 }
