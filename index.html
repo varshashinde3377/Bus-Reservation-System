@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"> </script>
+    
     <title>Bus Reservation System</title>
 </head>
 
@@ -16,14 +16,16 @@
     </div>
 
     <div class="bus-container">
-        <lable>Bus type:</lable>
-        <select id="bustype">
-            <option value="45"> Volvo</option>
-            <option value="30"> Deluxe</option>
-            <option value="25"> Express</option>
+        <lable>Bus Type:</lable>
+        <select id="bus">
+            <option value="500"> Volvo</option>
+            <option value="800"> Deluxe</option>
+            <option value="1000"> Express</option>
         </select>
     </div>
 
+
+    
     <div class="container">
         <div class="lowerdeck">
             <h4>LowerDeck</h4>
@@ -99,10 +101,12 @@
                 <div class="seat unavailable"></div>
                 <small>Unavailable</small>
             </li>
+
             <li>
                 <div class="seat female"></div>
                 <small>Female</small>
             </li>
+
             <li>
                 <div class="seat male"></div>
                 <small>Male</small>
@@ -117,8 +121,9 @@
     </div>
 
     <p class="text">
-        You have selected <span id="count">0</span> seats for a price of $<span id="total">0</span>
+        You have selected <span id="count">0</span> seats for a price of Rs.<span id="total">0</span>
       </p>
+      <script src="script.js"> </script>
 </body>
 
 </html>
